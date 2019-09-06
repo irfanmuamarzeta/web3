@@ -1,0 +1,269 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #ffffff;
+    color: #555555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+.clearfix {zoom :1}
+.clearfix:after {
+    content: '.'
+    clear : both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/*REUSEABLE */
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+section {
+    padding: 80px 0;
+}
+
+.long-copy{
+    width: 70%; /*membatasi huruf*/
+    margin: 0 auto; /* membuat teks ke tengah*/
+    line-height: 155%; /*Jarak atas dan bawah antar kalimat  paragraf*/
+    text-align: justify; /*membuat teks rata kanan dan kiri*/
+}
+
+.box{
+    padding: 1%;
+
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+
+
+}
+.icon-big {
+    font-size: 350%;
+    display: block;
+    color: #e67E22;
+    margin-bottom: 10px;
+
+}
+
+/*HEADING*/
+h1{
+    margin-top: 0px;
+    margin-bottom: 20px;
+    color: #FFF;
+    font-size: 240%;
+    text-transform: uppercase;
+    font-weight: 300;
+    word-spacing: 4px; /*jarak antara kata*/
+    letter-spacing: 1px; /*jarak antara abjad*/
+}
+h2{
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 180%;
+    text-align: center;
+    letter-spacing: 1px;
+}
+h2:after {
+    content: " ";
+    display: block;
+    height: 2px;
+    background-color:#e67E22;
+    width: 100PX;
+    margin: 0 auto; /*membuat posisi tengah pada objek*/
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+h3{
+    text-transform:uppercase; 
+    font-weight:300;
+    font-size:110%;
+    margin-bottom:15px;
+}
+h4{
+    text-transform:uppercase; 
+    font-weight:300;
+    font-size:110%;
+    margin-bottom:15px;
+}
+h5{
+    text-transform:uppercase; 
+    font-weight:300;
+    font-size:110%;
+    margin-bottom:15px;
+}
+
+
+
+header {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(img/hero.jpg); /*pemanggilan background */
+    height: 100vh; /*membuat height 100% */
+    background-position: center; /* pengambilan posisi menjadi di tengah */
+    background-size: cover; /* menyesuaikan width background gambar */
+    
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.main-nav{
+    float: right;
+    list-style: none; /*menghilangkan simbol*/
+    margin-top: 55px;
+}
+
+.main-nav li {
+    display: inline-block; /*membuat list menjadi horizontal*/
+    margin-left: 40px;
+}
+
+.main-nav li a{
+    color: #FFF;
+    text-decoration: none;
+    text-transform: uppercase; /*membuat huruf menjadi kapital*/
+    padding: 8px 0;
+    transition: border-bottom 0.3s;
+    border-bottom: 2px solid transparent;
+    font-size: 90%;
+}
+
+.main-nav li a:hover{
+    border-bottom: 2px solid #e67E22;
+}
+
+.hero-text-box{
+
+    position: absolute; /* membuat posisi */
+    top: 50%;
+    left: 50%;
+    width: 1140px;
+    transform: translate(-50%, -50%); /*same function absolute*/
+}
+
+.btn{
+    display: inline-block;
+    border: 10px 30px;
+    text-decoration: none;
+    border: 1px solid:#e67E22;
+    padding: 10px 30px;
+    border-radius: 200px; 
+    margin-right: 20px;
+}
+
+.btn-full{
+    border: 1px solid #e67E22;
+    background-color: #e67E22;
+    color: rgb(230,38,38);
+
+}
+
+.btn-full:hover{
+    background-color:#cf6d17;
+    transition: 0,3s;
+    background-color:#cf6d17;
+    color: #FFF;
+
+}
+
+.btn-ghost{
+    color:#e67E22;
+}
+
+.btn-ghost:hover{
+    background-color:#e67E22;
+    transition: 0.3s;
+    color: #FFF;
+}
+/*SECTION MEALS*/
+.seaction.meals{
+    padding: 0px;
+}
+.meals-showcase {
+    list-style: : none;
+    width: 100%;
+
+}
+.meals-showcase li{
+    display: block;
+    float: left;
+    width: 25%; /*100/4*/
+}
+.meal-photo{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+.meal-photo img{
+    opacity: 0.5;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);/*zoom objek*/
+    transition: 0.3s;
+}
+.meal-photo img:hover{
+    opacity: 1;
+      background-color:#000;
+    transition: 0,3s;
+    color: #FFF;
+    transform: scale(1.05);
+}
+/*how it works*/
+.section-steps{
+    background-color: #f2f2f2;
+
+}
+.steps-box:first-child{
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 30px;
+}
+.steps-box:last-child{
+    padding-left: 3%;
+    margin-top: 70px;
+}
+.app-screen{
+    width: 40%;
+
+}
+.works-step{
+    margin-bottom: 50px;
+
+}
+.works-step:last-of-type{
+    margin-bottom: 80px;
+
+}
+.works-step div{
+    color: #e67E22;
+    border: 2px solid #e67E22;
+    display: inline-block;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    font-size: 150%;
+    margin-right: 25px;
+}
+.btn-app img{
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
